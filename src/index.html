@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Share your location with the world | Findmehe.re</title>
+        <meta name="keywords" content="location, anonymous, share, gps, mobile, sharing, latitude, longitude, find, findme, findlocation, position">
+        <meta name="description" content="Let yourself be found by sharing your GPS location with the world, anonymous and shareable. Let others discover your location if you want to.">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- build:css css/findmehere.min.css -->
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- /build -->
+
+         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+         <script type="text/javascript" src="https://cdn.firebase.com/js/client/1.0.11/firebase.js"></script>
+         <script type="text/javascript" src="https://cdn.firebase.com/js/simple-login/1.4.1/firebase-simple-login.js"></script>
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div id="findmehere-app">
+
+            <button id="my-location-window"></button>
+
+            <div id="map-canvas"></div>
+
+        </div>
+
+       
+        <!-- build:js js/findmehere.min.js -->
+        <script type="text/javascript" src="js/vendor/underscore.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- /build -->
+        
+        <script type="text/javascript">
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+    </body>
+</html>
