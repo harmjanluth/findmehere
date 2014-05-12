@@ -349,6 +349,8 @@ addMapMarker = ( id, location, map ) ->
 		if uid is id
 			toggleMyInfoWindow()
 		else
+			myInfoWindow.opened = true
+			toggleMyInfoWindow()
 			infoWindow.open map, marker
 
 	# Add to new listener to array Listeners

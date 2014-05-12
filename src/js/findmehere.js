@@ -1535,6 +1535,8 @@
       if (uid === id) {
         return toggleMyInfoWindow();
       } else {
+        myInfoWindow.opened = true;
+        toggleMyInfoWindow();
         return infoWindow.open(map, marker);
       }
     });
