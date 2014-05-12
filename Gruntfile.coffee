@@ -66,8 +66,8 @@ module.exports = ( grunt )  ->
             findmehere:
                 options:
                     authKey: 'production'
-                    host: '12.112.112.11'
-                    dest: '/httpdocs/'
+                    host: 'findmehe.re'
+                    dest: '/webroot/'
                     port: 21
                 files: [ 
                     expand: true
