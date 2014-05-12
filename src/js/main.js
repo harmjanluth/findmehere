@@ -69,8 +69,8 @@
         uid = user.uid;
         account.once("value", function(data) {
           data = data.val();
-          profile = data;
-          profile.uid = uid;
+          profile = data || {};
+          profile.uid = user.uid;
           if (data && data.name) {
             if (data.active) {
               addMapMarker(data.name, data, map);

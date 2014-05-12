@@ -79,8 +79,8 @@ initializeLocation = ->
 
 				# Globalize
 				#
-				profile = data
-				profile.uid = uid
+				profile = data || {}
+				profile.uid = user.uid
 
 				if data && data.name
 
