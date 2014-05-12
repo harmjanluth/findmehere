@@ -47,7 +47,7 @@ module.exports = ( grunt )  ->
                 expand: true
                 cwd: 'src'
                 dest: 'build'
-                src: [ 'index.html', 'graphics/**/*', 'favicon.ico', 'js/vendor/html5shiv.js', 'snapshot/**/*', '.htaccess' ]
+                src: [ 'index.html', 'graphics/**/*', 'favicon.ico', 'js/vendor/html5shiv.js' ]
         clean:
             cwd: ''
             options:

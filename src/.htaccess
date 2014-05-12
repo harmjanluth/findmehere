@@ -1,7 +1,7 @@
 RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ /root/findmehere/src/index.html [L]
+RewriteRule ^ /root/findmehe.re/src/index.html [L]
 
 # Follow symbolic links.
 Options +FollowSymLinks
